@@ -4,7 +4,7 @@
 
 Projeto super simples feito com o intuito de praticar sobre consumo de dados vindos de um arquivo JSON. Sistema de alunos de uma escola que armazena dados como ID, Nome, Turma e nota das matérias que o aluno cursou.
 
-![](C:\workspace\Projetos\Sistema Básico Escolar\imgs\Print_01.png)
+![](.\imgs\Print_01.png)
 
 ### Por que criei esse projeto?
 
