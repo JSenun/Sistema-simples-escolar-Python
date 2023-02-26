@@ -1,0 +1,61 @@
+{
+    "alunos": [
+        {
+            "id": "135",
+            "nome": "Thiago",
+            "sala": "1C",
+            "materias": [
+                {
+                    "materia": "Portugu\u00eas",
+                    "nota": 7.0
+                },
+                {
+                    "materia": "Matem\u00e1tica",
+                    "nota": 5.5
+                },
+                {
+                    "materia": "Hist\u00f3ria",
+                    "nota": 9.5
+                }
+            ]
+        },
+        {
+            "id": "136",
+            "nome": "Fernanda",
+            "sala": "1D",
+            "materias": [
+                {
+                    "materia": "Portugu\u00eas",
+                    "nota": 10
+                },
+                {
+                    "materia": "Matem\u00e1tica",
+                    "nota": 6.5
+                },
+                {
+                    "materia": "Hist\u00f3ria",
+                    "nota": 5.5
+                }
+            ]
+        },
+        {
+            "id": "121",
+            "nome": "João",
+            "sala": "3C",
+            "materias": [
+                {
+                    "materia": "Portugu\u00eas",
+                    "nota": 7.0
+                },
+                {
+                    "materia": "Matem\u00e1tica",
+                    "nota": 6.5
+                },
+                {
+                    "materia": "Hist\u00f3ria",
+                    "nota": 8.9
+                }
+            ]
+        }
+    ]
+}
