@@ -4,7 +4,7 @@
 
 Projeto super simples feito com o intuito de praticar sobre consumo de dados vindos de um arquivo JSON. Sistema de alunos de uma escola que armazena dados como ID, Nome, Turma e nota das matérias que o aluno cursou.
 
-![](.\imgs\Print_01.png)
+![Print da "Interface" do programa no CMD](https://github.com/JSenun/Sistema-simples-escolar-Python/blob/master/imgs/Print_01.png)
 
 ### Por que criei esse projeto?
 
