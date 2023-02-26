@@ -1,8 +1,6 @@
 import json
 from random import randint
 
-with open('db.json', 'r', encoding='utf-8') as arquivo_json:
-    data = json.load(arquivo_json)
 
 # Funções Gráficas
 
@@ -17,6 +15,12 @@ def cria_cabecalho(string):  # Cria "cabeçalho" no CMD
     cria_linha('=')
 
 # Funcionalidades Sistema
+
+
+def le_arquivo_json(nome_arquivo):
+    with open(nome_arquivo, 'r', encoding='utf-8') as arquivo_json:
+        data = json.load(arquivo_json)
+    return data
 
 
 def cadastra_notas(numero_notas):
@@ -43,7 +47,7 @@ def cria_aluno():
         input('Insira a quantidade de materias que o aluno cursou: '))
     cria_linha('=')
     aluno = {
-        "id": id,
+        "id": str(id),
         "nome": nome,
         "sala": sala,
         "materias": cadastra_notas(materias)
@@ -155,11 +159,19 @@ def buscar_informacoes_aluno(db_alunos):
     print(' ')
 
 
+def atualiza_arquivo_json(nome_arquivo, dados_processados_arquivo):
+    with open(nome_arquivo, 'w', encoding='utf-8') as arquivo_json:
+        new_data = json.dumps(dados_processados_arquivo)
+        new_data = json.loads(new_data)
+        json.dump(new_data, arquivo_json)
+
+
 finalizar_programa = False
 
 cria_cabecalho('SISTEMA BÁSICO ESCOLAR')
 print('\nSeja bem-vindo/a ao sistema de cadastro e verificação de alunos!\n')
 while finalizar_programa == False:
+    data = le_arquivo_json('db.json')
     decisao = input(
         'O que você deseja fazer?\n 1 - Listar todos os alunos \n 2 - Filtrar aluno(a)\n 3 - Informações do aluno(a)(Necessário ID do aluno(a)) \n 4 - Cadastrar aluno(a) \n 5 - Modificar aluno(a) \n 6 - Remover aluno(a) \n 7 - Finalizar programa\nInsira sua escolha: ')
     if decisao == '1':
@@ -169,7 +181,8 @@ while finalizar_programa == False:
     elif decisao == '3':
         buscar_informacoes_aluno(data)
     elif decisao == '4':
-        pass
+        data['alunos'].append(cria_aluno())
+        atualiza_arquivo_json('db.json', data)
     elif decisao == '5':
         pass
     elif decisao == '6':
@@ -182,9 +195,3 @@ while finalizar_programa == False:
     else:
         print('\nEntrada inválida! Tente novamente')
         cria_linha('=')
-
-"""with open('db.json', 'w', encoding='utf-8') as arquivo_json:
-    new_data = json.dumps(data)
-    new_data = json.loads(new_data)
-    json.dump(new_data, arquivo_json)
-"""

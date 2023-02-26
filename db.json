@@ -40,7 +40,7 @@
         },
         {
             "id": "121",
-            "nome": "João",
+            "nome": "Jo\u00e3o",
             "sala": "3C",
             "materias": [
                 {
@@ -54,6 +54,44 @@
                 {
                     "materia": "Hist\u00f3ria",
                     "nota": 8.9
+                }
+            ]
+        },
+        {
+            "id": "200",
+            "nome": "Diego",
+            "sala": "3C",
+            "materias": [
+                {
+                    "materia": "Portugu\u00eas",
+                    "nota": 7.5
+                },
+                {
+                    "materia": "Matem\u00e1tica",
+                    "nota": 6.5
+                },
+                {
+                    "materia": "Hist\u00f3ria",
+                    "nota": 7.0
+                }
+            ]
+        },
+        {
+            "id": "293",
+            "nome": "Let\u00edcia",
+            "sala": "1D",
+            "materias": [
+                {
+                    "materia": "Portugu\u00eas",
+                    "nota": 8.0
+                },
+                {
+                    "materia": "Matem\u00e1tica",
+                    "nota": 9.0
+                },
+                {
+                    "materia": "Hist\u00f3ria",
+                    "nota": 6.5
                 }
             ]
         }
