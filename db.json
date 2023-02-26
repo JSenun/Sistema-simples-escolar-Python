@@ -1,25 +1,6 @@
 {
     "alunos": [
         {
-            "id": "135",
-            "nome": "Thiago",
-            "sala": "1C",
-            "materias": [
-                {
-                    "materia": "Portugu\u00eas",
-                    "nota": 7.0
-                },
-                {
-                    "materia": "Matem\u00e1tica",
-                    "nota": 5.5
-                },
-                {
-                    "materia": "Hist\u00f3ria",
-                    "nota": 9.5
-                }
-            ]
-        },
-        {
             "id": "136",
             "nome": "Fernanda",
             "sala": "1D",
@@ -77,21 +58,21 @@
             ]
         },
         {
-            "id": "293",
-            "nome": "Let\u00edcia",
-            "sala": "1D",
+            "id": "249",
+            "nome": "Thiago",
+            "sala": "1C",
             "materias": [
                 {
                     "materia": "Portugu\u00eas",
-                    "nota": 8.0
+                    "nota": 7.0
                 },
                 {
                     "materia": "Matem\u00e1tica",
-                    "nota": 9.0
+                    "nota": 5.5
                 },
                 {
                     "materia": "Hist\u00f3ria",
-                    "nota": 6.5
+                    "nota": 10.0
                 }
             ]
         }

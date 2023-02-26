@@ -166,6 +166,17 @@ def atualiza_arquivo_json(nome_arquivo, dados_processados_arquivo):
         json.dump(new_data, arquivo_json)
 
 
+def busca_index_aluno(db_alunos):
+    print(' ')
+    cria_linha('=')
+    print(' ')
+    aluno_id = input('Informe o ID do aluno:\n')
+    print(' ')
+    for index, aluno in enumerate(db_alunos['alunos'], 0):
+        if aluno['id'] == aluno_id:
+            return index
+
+
 finalizar_programa = False
 
 cria_cabecalho('SISTEMA BÁSICO ESCOLAR')
@@ -173,7 +184,7 @@ print('\nSeja bem-vindo/a ao sistema de cadastro e verificação de alunos!\n')
 while finalizar_programa == False:
     data = le_arquivo_json('db.json')
     decisao = input(
-        'O que você deseja fazer?\n 1 - Listar todos os alunos \n 2 - Filtrar aluno(a)\n 3 - Informações do aluno(a)(Necessário ID do aluno(a)) \n 4 - Cadastrar aluno(a) \n 5 - Modificar aluno(a) \n 6 - Remover aluno(a) \n 7 - Finalizar programa\nInsira sua escolha: ')
+        'O que você deseja fazer?\n 1 - Listar todos os alunos \n 2 - Filtrar aluno(a)\n 3 - Informações do aluno(a)(Necessário ID do aluno(a)) \n 4 - Cadastrar aluno(a) \n 5 - Remover aluno(a) \n 6 - Finalizar programa\nInsira sua escolha: ')
     if decisao == '1':
         listar_alunos(data)
     elif decisao == '2':
@@ -184,10 +195,14 @@ while finalizar_programa == False:
         data['alunos'].append(cria_aluno())
         atualiza_arquivo_json('db.json', data)
     elif decisao == '5':
-        pass
+        index = busca_index_aluno(data)
+        print('\nRemovendo aluno(a)', data['alunos'][index]['nome'])
+        print(' ')
+        cria_linha('=')
+        print(' ')
+        data['alunos'].pop(index)
+        atualiza_arquivo_json('db.json', data)
     elif decisao == '6':
-        pass
-    elif decisao == '7':
         cria_linha('=')
         print('Finalizando o programa...')
         cria_linha('=')
