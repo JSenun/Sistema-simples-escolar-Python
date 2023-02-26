@@ -4,7 +4,7 @@
 
 Projeto super simples feito com o intuito de praticar sobre consumo de dados vindos de um arquivo JSON. Sistema de alunos de uma escola que armazena dados como ID, Nome, Turma e nota das matérias que o aluno cursou.
 
-![](C:\workspace\Projetos\Sistema Básico Escolar\imgs\Print_01.png)
+![Print da "Interface" do programa no CMD](https://github.com/JSenun/Sistema-simples-escolar-Python/blob/master/imgs/Print_01.png)
 
 ### Por que criei esse projeto?
 
@@ -17,7 +17,7 @@ Comecei esse projeto com o intuito de desenvolver minhas habilidades com Python,
   - [x] Listar Alunos
   - [x] Filtro de alunos (ID, Nome ou Turma)
   - [x] Busca de informações de aluno especifico (Utilizando o ID)
-  - [ ] Cadastro de novo aluno(a)
+  - [x] Cadastro de novo aluno(a)
   - [ ] Modificar dados dentro de cadastro de aluno(a)
   - [ ] Remover aluno(a)
 - Salvar os dados na finalização do programa para que não sejam perdidos
