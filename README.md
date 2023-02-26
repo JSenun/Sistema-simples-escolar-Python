@@ -18,7 +18,6 @@ Comecei esse projeto com o intuito de desenvolver minhas habilidades com Python,
   - [x] Filtro de alunos (ID, Nome ou Turma)
   - [x] Busca de informações de aluno especifico (Utilizando o ID)
   - [x] Cadastro de novo aluno(a)
-  - [ ] Modificar dados dentro de cadastro de aluno(a)
-  - [ ] Remover aluno(a)
+  - [x] Remover aluno(a)
 - Salvar os dados na finalização do programa para que não sejam perdidos
 
